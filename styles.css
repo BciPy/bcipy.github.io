@@ -30,6 +30,20 @@ h2 {
     text-align: center;
     padding: inherit;
 }
+/* Links Formatting: */ 
+a:link {
+    color: #0090c0;
+    text-decoration: none;
+}
+a:visited{
+    color: #6363bb;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #00608f;
+    text-decoration: underline;
+}
 
 
 /* Logo Formatting: */ 
