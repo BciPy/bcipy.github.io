@@ -1,0 +1,133 @@
+---
+layout: default
+---
+
+{% if page.category.columns %}
+    {% assign columns = page.category.columns %}
+{% else %}
+    {% assign columns = 2 %}
+{% endif %}
+
+<script>
+function filter(tag) {
+  setActiveTag(tag);
+  showContainer(tag);
+}
+
+function setActiveTag(id) {
+  // loop through all items and remove active class
+  var items = document.getElementsByClassName('card-category');
+  for(var i=0; i < items.length; i++) {
+    items[i].classList.remove('uk-card-primary');
+    items[i].classList.add('uk-card-default');
+  }
+
+  // set the selected id's item to active
+  var item = document.getElementById(id + '-card');
+  if(item) {
+    item.classList.remove('uk-card-default');
+    item.classList.add('uk-card-primary');
+  }
+}
+
+function showContainer(id) {
+  // loop through all lists and hide them
+  var lists = document.getElementsByClassName('category-container');
+  for(var i=0; i < lists.length; i++) {
+    lists[i].classList.add('hidden');
+  }
+
+  // remove the hidden class from the list corresponding to the selected id
+  var list = document.getElementById(id + '-container');
+  var section = document.getElementById('category-section');
+  if(list) {
+    section.classList.remove('hidden');
+    list.classList.remove('hidden');
+  }
+
+}
+</script>
+
+<div class="uk-section uk-section-large uk-background-muted">
+    <div class="uk-container">
+        {% for section in site.data.navigation_categories %}
+            {% if section.heading %}
+                <h2 class="uk-text-center section-title section-title-primary">{{ section.heading }}</h2>
+            {% endif %}
+            <div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center" data-uk-grid>
+            {% for category in section.categories %}
+                {% if category.title %}
+                {% assign posts = category | last %}
+                <div>
+                    <div id="{{ category.title | slugify }}-card" class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-card-body uk-inline card-category">
+                        <a class="uk-position-cover" href="#{{ category.title | slugify }}-container" data-uk-scroll="duration: 400; offset: 35;" onclick="filter('{{ category.title | slugify }}');"></a>
+                        {% if category.icon %}
+                        <span data-uk-icon="icon: {{ category.icon }}; ratio: 2" class=""></span>
+                        {% endif %}
+                        <h3 class="uk-card-title uk-margin">{{ category.title }}</h3>
+                        {% if category.desc %}
+                        <p>{{ category.desc }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="uk-section uk-section-large uk-section-default">
+    <div class="uk-container uk-container-small">
+
+        <div class="uk-article-content">{{ content }}</div>
+
+        {% if page.featured.tag %}
+        <div>
+            {% if page.featured.title %}
+            <h2 class="section-title-primary">{{ page.featured.title }}
+                <a href="#" data-uk-totop data-uk-scroll="duration: 400" class="uk-float-right uk-margin-small-top"></a>
+            </h2>
+            {% endif %}
+            <ul class="uk-list uk-list-large link-icon-right">
+            {% for post in site.tags[page.featured.tag] %}
+                <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        <div id="category-section" class="uk-margin-large-top hidden">
+            <hr>
+            {% for category in site.categories %}
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+
+            <div id="{{ category_name | slugify }}-container" class="category-container hidden">
+                <h2 class="section-title-primary">{{ category_name }}
+                    <a href="#" data-uk-totop data-uk-scroll="duration: 400" class="uk-float-right uk-margin-small-top"></a>
+                </h2>
+                <ul class="uk-list uk-list-large link-icon-right uk-margin-remove">
+                {% for post in site.categories[category_name] %}
+                    <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+
+{% if page.cta %}
+<div  class="uk-container uk-container-small"><hr></div>
+<div class="uk-section-large uk-text-center">
+    <div class="uk-container uk-container-small">
+        <div data-uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true">
+            <h2 class="section-title-primary">{{ page.cta.title }}</h2>
+            {% if page.cta.subtitle %}<p class="subtitle uk-text-lead uk-text-center">{{ page.cta.subtitle | escape }}</p>{% endif %}
+            <a class="uk-button uk-button-primary uk-button-large uk-border-rounded uk-margin-small-top" href="{{ domain }}{{ page.cta.button_url }}">{{ page.cta.button_text }}</a>
+        </div>
+    </div>
+</div>
+{% endif %}

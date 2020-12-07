@@ -1,0 +1,10 @@
+<ul data-uk-accordion="multiple: true">
+    {% for faq in site.faqs %}
+    <li>
+        <h3 class="uk-accordion-title">{{ faq.title }}</h3>
+        <div class="uk-accordion-content">
+            {{ faq.content }}
+        </div>
+    </li>
+    {% endfor %}
+</ul>

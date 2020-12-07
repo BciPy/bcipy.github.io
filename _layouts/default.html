@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+    {% include head.html %}
+
+    <body>
+
+    {% if page.hero %}
+        {% include header-hero.html %}
+    {% else %}
+        {% include header.html %}
+    {% endif %}
+
+    <main aria-label="Content">
+    {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    {% include offcanvas.html %}
+
+    </body>
+
+</html>
