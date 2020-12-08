@@ -54,7 +54,7 @@ function showContainer(id) {
             {% if section.heading %}
                 <h2 class="uk-text-center section-title section-title-primary">{{ section.heading }}</h2>
             {% endif %}
-            <div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center" data-uk-grid>
+            <div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center" data-uk-grid style="justify-content: center;">
             {% for category in section.categories %}
                 {% if category.title %}
                 {% assign posts = category | last %}

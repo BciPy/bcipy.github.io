@@ -2,14 +2,12 @@
 
 - heading: Browse All Topics
   categories:
-    - title: Getting Started
-      desc: Get your account up and running in just few easy steps
+    - title: Clinical Documents
+      desc: Get the latest Articles about Bci Technologies
       icon: settings
 
-    - title: Account and Billing
-      desc: Managing your account, creating new users and exporting data
+    - title: BciPy Documentation
+      desc: Get our BciPy Documentation
       icon: credit-card
 
-    - title: Troubleshooting
-      desc: Answers to most common configuration issues
-      icon: cog
+    
