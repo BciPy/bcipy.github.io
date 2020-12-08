@@ -3,7 +3,7 @@ layout: contact
 title: Got Any Questions
 permalink: /contact/
 formspree:
-    email: memmott@ohsu.edu
+    email: cedeno@ohsu.edu
     redirect: /thanks/
 ---
 
