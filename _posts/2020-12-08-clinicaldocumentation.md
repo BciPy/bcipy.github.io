@@ -1,3 +1,11 @@
+---
+layout: post
+title: Clinical Documentation - 2020
+categories: [Clinical Documentation]
+tags: featured
+
+---
+
 #### Sections in this article
 {:.no_toc}
 * TOC

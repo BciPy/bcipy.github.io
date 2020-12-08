@@ -12,7 +12,7 @@ description:        BciPy Articles and Documentation
 baseurl:            ""
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
-permalink:          /:BciPYDocumentation/
+permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
 url:                "https://jekyll-theme-desk.netlify.com"
