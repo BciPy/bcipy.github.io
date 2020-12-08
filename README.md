@@ -1,7 +1,10 @@
 
 
-## First of All I Would like to Thank You for Your Purchase, You Are Awesome!
+## BciPy and Clinical Documentation
 
-### Documentation
-Product documentation is available online [https://docs.unbound.studio/desk-jekyll-helpdesk-theme/](https://docs.unbound.studio/desk-jekyll-helpdesk-theme/). 
+This website was created with the intention of hosting articles, documents, and research about BCI 
+
+### BciPy Code Documentation
+
+If you are looking for CAMBI's BCiPy code Official Github page, click <a href="https://github.com/CAMBI-tech/BciPy" target="_blank">here</a>.
 
