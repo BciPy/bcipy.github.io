@@ -5,8 +5,8 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site title and description
-title:              BciPy Documentation 
-description:        BciPy Articles and Documentation 
+title:              BCIPY Documentation 
+description:        BCIPY Articles and Documentation 
 
 # Site subpath, e.g. /blog
 baseurl:            ""
@@ -44,19 +44,6 @@ twitter_username:   CAMBI_tech
 github_username:    CAMBI-tech
 
 
-# Default footer image settings
-footer:
-    copyright:      Made by <a href="https://unbound.studio/">Unbound Studio</a> in Rome, Italy.
-
-# Disqus comments shortname, requires Disqus account https://disqus.com/
-disqus:
-    shortname:      # 7865
-
-# Google analytics code, get your code here https://www.google.com/analytics/
-google_analytics:
-
-# Google maps API key, get your key here: https://developers.google.com/maps/documentation/javascript/get-api-key
-google_maps_api_key:
 
 # Path to post content assets directory i.e post images, pdfs etc
 post_assets:        /assets/posts/
