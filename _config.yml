@@ -1,0 +1,72 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site title and description
+title:              BCIPY Documentation 
+description:        BCIPY Articles and Documentation 
+
+# Site subpath, e.g. /blog
+baseurl:            ""
+
+# Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
+permalink:          /:title/
+
+# Site base hostname & protocol, e.g. http://example.com
+url:                "https://jekyll-theme-desk.netlify.com"
+
+# Site logo, dark and light depending on page hero text setting dark/light
+logo_image:
+    light:          BCI-Logo.jpg  # e.g. logo.png, upload logo image file to /assets/posts/ folder
+    dark:           BCI-Logo.jpg  # e.g. logo.png, upload logo image file to /assets/posts/ folder
+
+# Author settings, displayed on about page
+author:
+    name:           CAMBI
+    email:
+    website:
+    facebook:      
+    flickr:
+    dribbble:
+    github:       https://github.com/CAMBI-tech/BciPy
+    googleplus:
+    instagram:      
+    linkedin:
+    pinterest:
+    twitter:        https://twitter.com/CAMBI_tech
+    vimeo:          
+    youtube:
+
+# Social share buttons
+twitter_username:   CAMBI_tech
+github_username:    CAMBI-tech
+
+# Default footer image settings
+footer:
+    copyright:       This work is funded by the U.S. Department of Health & Human Services, award R01DC009834 awarded from the National Institutes of Health to Oregon Health & Science University, Dr. Melanie Fried-Oken, principal investigator.
+
+
+# Path to post content assets directory i.e post images, pdfs etc
+post_assets:        /assets/posts/
+
+# Build settings
+markdown:           kramdown
+highlighter:        rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-gist
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+
+sass:
+  style:            compressed
+
+collections:
+  faqs:
+    output: false

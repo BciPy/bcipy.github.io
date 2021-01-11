@@ -1,0 +1,17 @@
+# Categories home page navigation
+
+- heading: Browse All Topics
+  categories:
+    - title: Clinical Documentation
+      desc: Get the latest Articles about Bci Technologies
+      icon: settings
+
+    - title: BCIPY Documentation
+      desc: Get our BCIPY Documentation
+      icon: laptop
+
+    - title: Glossary
+      desc: 
+      icon: database
+
+    

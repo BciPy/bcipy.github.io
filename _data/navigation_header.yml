@@ -1,0 +1,10 @@
+# Navbar menu navigation links
+- title: Help
+  url: /
+
+- title: Faq
+  url: /faq/
+
+- title: Contact
+  url: /contact/
+
