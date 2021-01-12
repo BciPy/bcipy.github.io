@@ -15,7 +15,7 @@ baseurl:            ""
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                "https://jekyll-theme-desk.netlify.com"
+url:                "https://bcipy.github.io/"
 
 # Site logo, dark and light depending on page hero text setting dark/light
 logo_image:
