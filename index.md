@@ -11,6 +11,7 @@ hero:
     search: true
 category:
     columns: 2
+
 featured:
     title: Featured Articles
     tag: featured
