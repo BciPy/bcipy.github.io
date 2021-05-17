@@ -63,7 +63,10 @@ BciPy is written using object-oriented programming, a technique that models and 
 
 Figure 1 BciPy high-level diagram of modules and implementation. This graphic demonstrates the necessary components for BCI use as well as how BciPy modules are partitioned in the current version. The implementation figure splits functionality into Frontend and Backend, in which the observable outputs of BciPy are considered frontward facing (Frontend) components.
  
-Figure 2: BciPy EEG Session Results
+### Figure 2: BciPy EEG Session Results
+
+![Image of BciPy EEG Session Results](https://github.com/BciPy/bcipy.github.io/blob/alister/assets/posts/Eegs.jpg?raw=true)
+
  Figure 2 EEG data collected using the BciPy system in RSVP Calibration mode collected using the Wearable Sensing’s VR300 system. This demonstrates the software’s ability to collect ERPs such as the P300 (left), as well as SSVEP (right) as demonstrated using PSD off the presentation rate of 4 Hz on the Oz channel.
 ### Acquisition
 The acquisition module implements a client, which interacts with a buffer and file writer to facilitate data acquisition, writing, and real-time queries. Temporally precise real-time data queries are indispensable to BCI research.
