@@ -3,7 +3,7 @@ layout: contact
 title: Got any Questions? 
 permalink: /contact/
 formspree:
-    email: cedeno@ohsu.edu
+    email: cambi_support@googlegroups.com
     redirect: /thanks/
 ---
 
