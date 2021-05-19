@@ -1,7 +1,7 @@
 ---
 layout: help
-title: BCIPY Documentation
-subtitle: Find the latest Articles and Documentation about BCIPY
+title: BciPy Documentation
+subtitle: Find the latest Articles and Documentation about BciPy
 hero:
     background: "#0072ff"
     image: BrainComputerInterfaceSystems.jpg
