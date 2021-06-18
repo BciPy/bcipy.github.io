@@ -16,3 +16,6 @@ If you are looking for CAMBI's BciPy code Official Github page, click <a href="h
 - Run `bundle install`
 - Run `bundle exec jekyll serve`
 
+## Full Product Documentation can be found here:
+
+- https://docs.unbound.studio/desk-jekyll-helpdesk-theme/
