@@ -2,6 +2,8 @@
 $lh-l: 1.8;
 $border-light: #edeff1;
 $color-dark: #000;
+$link-color: rgba(5, 82, 190, 0.98);
+$link-hover-color: lighten($link-color, 5%);
 
 $base-heading-font-weight: 700;
 $base-heading-color: $color-dark;
@@ -10,15 +12,15 @@ $base-link-hover-text-decoration: none;
 $base-body-color: #474748;
 
 $global-font-family: system-ui;
-$global-link-color: $color-dark;
-$global-link-hover-color: $global-primary-background;
+$global-link-color: $link-color;
+$global-link-hover-color:  $link-hover-color;
 $global-xxlarge-font-size: 2rem;
 $global-xlarge-font-size: 1.75rem;
 $global-small-font-size: 0.875rem;
 $global-muted-color: #A9AAAB;
 
-$icon-link-color: $global-primary-background;
-$icon-link-hover-color: $color-dark;
+$icon-link-color: $link-color;
+$icon-link-hover-color: $link-hover-color;
 $icon-link-active-color: darken($global-primary-background, 5%);
 $link-muted-hover-color: $color-dark;
 
