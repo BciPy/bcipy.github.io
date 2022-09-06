@@ -115,9 +115,14 @@ See also:
 - [CMake Using Dependencies Guide](https://cmake.org/cmake/help/latest/guide/using-dependencies/index.html#guide:Using%20Dependencies%20Guide)
 - [CMake find_package documentation](https://cmake.org/cmake/help/latest/command/find_package.html#command:find_package)
 
+
 #### Add Support for Compiling C
 
-The LSL cmake file executes C code to determine the system architecture. The `CMakeLists.txt` file must be modified to include support for compiling C as well as C++ code.
+The LSL cmake file executes C code to determine the system architecture. Without modification, attempting to run cmake will result in an error that the C language is not enabled. There are two ways to resolve this:
+
+1. _[preferred method]_ Add `enable_language(C)` in the liblsl `LSLCMake.cmake` (immediately before the `try_compile`). See [github issues](https://github.com/labstreaminglayer/App-TobiiPro/issues/5).
+
+2. Modify the TobiiPro `CMakeLists.txt` file to include support for compiling C as well as C++ code.
 
 Change:
 
