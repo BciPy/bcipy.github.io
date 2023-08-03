@@ -2,7 +2,6 @@
 layout: post
 title: Clinical Documentation - 2020
 categories: [Clinical Documentation]
-tags: featured
 
 ---
 
