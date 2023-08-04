@@ -1,18 +1,18 @@
 # Categories home page navigation
 
-- heading: Browse All Topics
+- heading: Browse All Articles & Documentation
   categories:
-    - title: Clinical Documentation
-      desc: Get the latest Articles about Bci Technologies
-      icon: settings
-
-    - title: BCIPY Documentation
-      desc: Get our BCIPY Documentation
+    - title: BciPy Documentation
+      desc: Read the BciPy documentation
       icon: laptop
 
     - title: Glossary
-      desc: 
+      desc: Learn important BciPy terminology
       icon: database
+
+    - title: Clinical Documentation
+      desc: Get the latest information about our BciPy research
+      icon: settings
     
   
     

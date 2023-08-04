@@ -1,28 +1,19 @@
 ---
 layout: post
-title: Brain-Computer Interface Codebase
+title: BciPy Introduction and Setup
 categories: [BciPy Documentation]
-tags: featured
-author: [Tab Memmott (OHSU)
-Aziz Kocanaogullari (NEU)
-Matthew Lawhead (OHSU- OCTRI)
-Berkan Kadioglu (NEU)
-Niklas Smedemark-Margulies (NEU) 
-Dani Smektala (OHSU)
-Ian Jackson (OHSU/ Reed)
-Basak Celik (NEU)
-Andac Demir (NEU)
-Shaobin Xu (NEU)
-Shiran Dudy (OHSU)]
+tags: featured, bci, brain-computer interface, intro, introduction, install, installation, setup, dependencies, python, pip, requirements, requirements-dev, macos, windows, linux, usage
+author: [Tab Memmott]
+
 ---
 
-#### Sections in this article
+#### Sections
 {:.no_toc}
 * TOC
 {:toc}
 
-# Brain- Computer Interface Codebase
-------------------------------------
+# BciPy
+-------
 
 ### What is it?
 

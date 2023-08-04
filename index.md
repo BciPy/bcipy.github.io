@@ -1,7 +1,7 @@
 ---
 layout: help
-title: BciPy Documentation
-subtitle: Find the latest Articles and Documentation about BciPy
+title: "BciPy: A Python Library for Brain-Computer Interface Research"
+subtitle: BciPy Documentation, Tutorials, and FAQs
 hero:
     background: "#0072ff"
     image: BrainComputerInterfaceSystems.jpg

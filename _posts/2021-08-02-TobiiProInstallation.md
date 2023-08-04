@@ -1,17 +1,18 @@
 ---
 layout: post
-title: App-TobiiPro Installation
+title: TobiiPro LSL App Installation
 categories: [BciPy Documentation]
-author: Matthew Lawhead (OHSU)
+author: [Matthew Lawhead]
+tags: [tobii, lsl, eye tracking]
 
 ---
 
-#### Sections in this article
+#### Sections
 {:.no_toc}
 * TOC
 {:toc}
 
-# App-TobiiPro Installation
+# TobiiPro Installation
 
 This document provides detailed instructions for building the [LabStreamingLayer TobiiPro](https://github.com/labstreaminglayer/App-TobiiPro) application from source for interfacing with Tobii eye trackers.
 
