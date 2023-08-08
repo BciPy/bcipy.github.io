@@ -68,4 +68,4 @@ Windows 11 is the recommended operating system for BciPy. Windows 10 is also sup
 
 ### Mac
 
-MacOS Big Sur is the recommended operating system for BciPy. Other versions will likely work, however they are not tested for support. XCode and command line tools are required to install BciPy. `xcode-select --install`. See the FAQ section for additional M1 chip support information.
+MacOS Big Sur or Monterey are the recommended operating systems for BciPy. Other versions will likely work, however they are not tested for support. XCode and command line tools are required to install BciPy. `xcode-select --install`. See the FAQ section for additional M1 chip support information.

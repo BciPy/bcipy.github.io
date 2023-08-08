@@ -19,7 +19,7 @@ author: [Tab Memmott]
 
 BciPy is a library for conducting Brain-Computer Interface experiments in Python. It functions as a standalone application for experimental data collection or you can take the tools you need and start coding your own system. It is designed to be modular and extensible, so you can easily add your own components and algorithms. It is also designed to be easy to use, so you can get started quickly.
 
-It will run on the latest windows (7, 10, 11), linux (ubuntu 22.04) and macos (Big Sur). Other versions may work as well, but are not guaranteed. To see supported versions and operating systems as of this release see here: [BciPy Builds](https://github.com/CAMBI-tech/BciPy/actions/workflows/main.yml).
+It will run on the latest windows (7, 10, 11), linux (ubuntu 22.04) and macos (Big Sur, Monterey). Other versions may work as well, but are not guaranteed. To see supported versions and operating systems as of this release see here: [BciPy Builds](https://github.com/CAMBI-tech/BciPy/actions/workflows/main.yml).
 
 *Please cite us when using!*
 
