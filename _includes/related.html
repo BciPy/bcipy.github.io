@@ -1,11 +1,12 @@
 <div class="uk-margin-large-top">
-    <h3>Related Articles</h3>
+    <h4>Related Content: </h4>
 
     {% assign maxRelated = 4 %}
     {% assign minCommonTags =  1 %}
     {% assign maxRelatedCounter = 0 %}
+    {% assign countTags = 0 %}
 
-    <ul class="uk-list uk-list-large link-icon-right">
+    <ul class="uk-list uk-list-large link-icon-right ">
     {% for post in site.posts %}
 
     {% assign sameTagCount = 0 %}
@@ -15,9 +16,11 @@
         {% if post.url != page.url %}
             {% if page.categories contains category %}
                 {% assign sameTagCount = sameTagCount | plus: 1 %}
+                {% assign countTags = countTags | plus: 1 %}
             {% endif %}
         {% endif %}
     {% endfor %}
+
 
     {% if sameTagCount >= minCommonTags %}
         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
@@ -28,5 +31,9 @@
     {% endif %}
 
     {% endfor %}
+
+    {% if countTags == 0 %}
+        <li>No related posts found.</li>
+    {% endif %}
     </ul>
 </div>

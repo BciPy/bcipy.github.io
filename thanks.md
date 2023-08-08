@@ -4,4 +4,4 @@ title: Thanks
 permalink: /thanks/
 ---
 
-Thank you! 
+Thank you! [Homepage]({{ site.url }}).

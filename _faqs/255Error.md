@@ -1,5 +1,6 @@
 ---
 title: Failed with error code 255 
+categories: [FAQ]
 ---
 
 The error: ""python setup.py egg_info" failed with error code 255" can be fixed by upgrading to the latest Pip version. Use the following command in your terminal: 
