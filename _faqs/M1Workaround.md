@@ -1,7 +1,9 @@
 ---
 title: How to Install BciPy on Mac M1 Chip 
 ---
+Instructions apply for BciPy versions `2.0.0rc1` through `2.0.0rc4`
 
+ 
 If you are using a computer with the Mac M1 chip, you may run into issues with installing some packages of BciPy including psychopy and pyqt5. 
 
 The best workaround for this is to use the Rosetta 2 Terminal, which emulates an i386 architecture instead of arm64.
