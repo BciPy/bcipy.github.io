@@ -61,8 +61,6 @@ data_save_location/
                     protocol_data (system data, protocol/tasks executed)
 ```
 
-An example of a data directory structure can be found: TODO: Add example directory structure here
-
 ### Directory Breakdown
 
 * `user_id/`: A directory for a specific user that is typically identified by a unique user identifier.
