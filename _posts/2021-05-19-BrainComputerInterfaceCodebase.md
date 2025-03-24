@@ -6,7 +6,6 @@ tags: featured, bci, brain-computer interface, intro, introduction, install, ins
 author: [Tab Memmott]
 
 ---
-
 #### Sections
 {:.no_toc}
 * TOC
