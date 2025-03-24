@@ -25,19 +25,17 @@ logo_image:
 # Author settings, displayed on about page
 author:
     name:           CAMBI
-    website:  https://www.ohsu.edu/reknew/brain-computer-interface-systems
-    github:       https://github.com/CAMBI-tech/BciPy
-    twitter:    https://twitter.com/CAMBI_tech
-    youtube: https://www.youtube.com/channel/UCgqvLDAoA1FGFHCF2lC2z3A
+    website:  https://www.cambi.tech/
+    github:   https://github.com/CAMBI-tech/BciPy
+    youtube:  https://www.youtube.com/channel/UCgqvLDAoA1FGFHCF2lC2z3A
 
 # Social share buttons
-twitter_username:   CAMBI_tech
 github_username:    CAMBI-tech
 youtube_username: https://www.youtube.com/channel/UCgqvLDAoA1FGFHCF2lC2z3A
 
 # Default footer image settings
 footer:
-    copyright:       This work is funded by the U.S. Department of Health & Human Services, award R01DC009834 awarded from the National Institutes of Health to Oregon Health & Science University, Dr. Melanie Fried-Oken, principal investigator.
+    copyright:       This work is funded by the U.S. Department of Health & Human Services, award R01DC009834 awarded from the National Institutes of Health to Oregon Health & Science University.
 
 
 # Path to post content assets directory i.e post images, pdfs etc
