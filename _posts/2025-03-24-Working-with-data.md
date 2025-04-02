@@ -291,6 +291,40 @@ evoked.plot()
 evoked.plot_topomap(times=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7])
 ```
 
+### Using ERPTransformParams to instantiate parameters
+
+The `ERPTransformParams` class is used to define the parameters for an ERP transform. This class allows users to specify the parameters for the ERP transform without neeing to extract them from the parameters directly. The `get_default_transform` method can be used to create a filter for the signal being collected at a specific sample rate and applied to RawData or np.ndarray.
+
+```python
+from bcipy.signal.process.transform import ERPTransformParams
+from bcipy.signal.process import get_default_transform
+from bcipy.io.load import load_json_parameters, load_raw_data
+
+# Load parameters from a JSON file
+parameters = load_json_parameters('path/to/parameters.json', value_cast=True)
+
+# create a filter for a signal being collected at 256Hz
+sample_rate = 256
+
+# extract relevant parameters for the ERP transform
+erp_params = parameters.instantiate(ERPTransformParams)
+
+# Define the default transform using the erp_params and sample rate
+transform = get_default_transform(
+    sample_rate_hz=sample_rate,
+    notch_freq_hz=erp_params.notch_filter_frequency,
+    bandpass_low=erp_params.filter_low,
+    bandpass_high=erp_params.filter_high,
+    bandpass_order=erp_params.filter_order,
+    downsample_factor=erp_params.downsample_rate,
+)
+
+# Any signal processing can be done using the transform
+# For example, applying the transform to the RawData object
+raw_data = load_raw_data('path/to/raw_data_file.csv')
+data, fs = raw_data.by_channel(transform=transform)
+```
+
 ### Training Models
 
 In both Calibration and Copy Phrase modes, the loaded data can be used to train machine learning models. Typically, the data is split into training and testing sets, with triggers and raw signal data being used to extract features and labels.
@@ -302,7 +336,6 @@ See the `bcipy.signal.model` module for more information. In particular, the `bc
 ### Converting Data to BIDS Format
 
 For sharing data with other researchers, BciPy supports converting data to the BIDS (Brain Imaging Data Structure) format. BIDS is a standardized format for sharing and organizing neuroimaging data, which is particularly useful when integrating EEG or other neurophysiological data with imaging data. The conversion process typically involves organizing the data into the BIDS directory structure and populating the required metadata files (e.g., dataset_description.json, eeg.json, etc.).
-
 
 BciPy provides tools for converting data to the BIDS format, which can be found in the `bcipy.io.convert` module. There is a demo script in the `bcipy.io.demo.demo_convert.py` module that demonstrates how to convert BciPy data to the BIDS format.
 
